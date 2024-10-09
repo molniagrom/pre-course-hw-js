@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 let passportWithAddress = {
     name: "Petr",
     surname: "Petrov",
@@ -9,7 +7,7 @@ let passportWithAddress = {
     }
 };
 
-let passportCopy = _.cloneDeep(passportWithAddress);
+let passportCopy = JSON.parse(JSON.stringify(passportWithAddress));
 
 passportCopy.address.city = "Bobryisk";
 
