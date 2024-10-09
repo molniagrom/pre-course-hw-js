@@ -4,16 +4,16 @@ let passportMarried = {
     address: {
         country: "USA",
         city: "Bobryisk"
-    }
+    },
+    married: true // Добавляем свойство married в исходный объект
 };
 
 let passportMarried2 = {
     ...passportMarried,
-    married: true, 
     address: {
         ...passportMarried.address 
     }
 };
 
 console.log(passportMarried);  
-console.log(passportMarried2);  
+console.log(passportMarried2);
