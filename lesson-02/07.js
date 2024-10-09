@@ -7,14 +7,13 @@ let passportMarried = {
     }
 };
 
-// Создаем глубокую копию объекта passportMarried и добавляем свойство married
 let passportMarried2 = {
     ...passportMarried,
-    married: true,
+    married: true, 
     address: {
-        ...passportMarried.address
+        ...passportMarried.address 
     }
 };
 
-console.log(passportMarried);
-console.log(passportMarried2);
+console.log(passportMarried);  
+console.log(passportMarried2);  
