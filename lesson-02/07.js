@@ -7,5 +7,14 @@ let passportMarried = {
     }
 };
 
-let passportCopy = JSON.parse(JSON.stringify(passportMarried));
-passportCopy.married = true;
+// Создаем глубокую копию объекта passportMarried и добавляем свойство married
+let passportMarried2 = {
+    ...passportMarried,
+    married: true,
+    address: {
+        ...passportMarried.address
+    }
+};
+
+console.log(passportMarried);
+console.log(passportMarried2);
