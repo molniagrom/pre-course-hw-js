@@ -1,4 +1,4 @@
-const _ = require('lodash');
+import _ from 'lodash';
 
 let passportWithAddress = {
     name: "Petr",
@@ -9,11 +9,9 @@ let passportWithAddress = {
     }
 };
 
-// Создание глубокой копии
 let passportCopy = _.cloneDeep(passportWithAddress);
 
-// Изменение значения city
 passportCopy.address.city = "Bobryisk";
 
-console.log(passportWithAddress); // Исходный объект остается неизменным
-console.log(passportCopy); // Объект с измененным городом
+console.log(passportWithAddress); 
+console.log(passportCopy); 
