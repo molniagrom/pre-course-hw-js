@@ -6,3 +6,6 @@ let passportMarried = {
         city: "Bobryisk"
     }
 };
+
+let passportCopy = JSON.parse(JSON.stringify(passportMarried));
+passportCopy.married = true;
