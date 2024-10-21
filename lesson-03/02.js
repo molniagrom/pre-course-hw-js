@@ -2,7 +2,7 @@ const words = ["яблоко", "банан", "апельсин", "манго", "
 
 const foundOrange = words.indexOf("апельсин");
 
-if (foundOrange){
+if (foundOrange !== -1){
   console.log("Ура! нашел");
 } else{
   console.log("Придется поискать в другом магазине…");
